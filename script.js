@@ -40,7 +40,7 @@ function renderItem(item){
                 </div>
                 <hr>
                 <div class = "metadata row position-relative">
-                <div class = "col"> <p>Published ${item.data.date}</p></div>
+                <div class = "col"> <p>Published ${moment(item.data.date).format("MMMM Do, YYYY")}</p></div>
                 <div class = "col"></div>
                 <div class = "col"> <a class="btn btn-primary btn-lg  me-4 end-0 position-absolute" target="_blank" href="${item.data.url}" role="button">Read more</a></div>
                 </div>

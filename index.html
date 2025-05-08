@@ -1,38 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>fraime</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </head>
-  <body class = "bg-dark">
-    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
-      <div class="container-fluid mx-4 justify-content-center row">
-        <div class = "col text-start">
-          <a class="navbar-brand" href="/fraime/chat.html">chat</a>
-        </div> 
-        <div class = "col text-center">
-          <a class="navbar-brand" href="#">
-            fr<span style = "color: #c85103;">ai</span>me
-          </a>
-        </div>
-        <div class = "col text-end">
-          <a class="navbar-brand" href="/fraime/about.html">
-            about
-          </a>
-          </div>
-        </div>
-        
-      
-    </nav>
-    
-    <div id = "container">
-      
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fraime</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar fixed-top  bg-dark" data-bs-theme="dark">
+    <div class="container-fluid mx-4 justify-content-center row">
+      <div class="col text-start">
+        <a class="navbar-brand" href="/fraime/chat.html">chat</a>
+      </div>
+      <div class="col text-center">
+        <a class="navbar-brand" href="#">
+          fr<span style="color: #c85103;">ai</span>me<sup>(alpha)</sup>
+        </a>
+      </div>
+      <div class="col text-end">
+        <a class="navbar-brand" href="/fraime/about.html">
+          about
+        </a>
+      </div>
     </div>
-  </body>
+    <div class="container-fluid mx-4 justify-content-center py-3 row">
+      <div class="col-md-1">
+        <div class="dropdown ">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Category
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">lorem</a></li>
+            <li><a class="dropdown-item" href="#">ipsum</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="dropdown ">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Sort by
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Newest to Oldest</a></li>
+            <li><a class="dropdown-item" href="#">Oldest to Newest</a></li>
+            <li><a class="dropdown-item" href="#">Number of Citations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="dropdown ">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Topic
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">lorem</a></li>
+            <li><a class="dropdown-item" href="#">ipsum </a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="dropdown ">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Type
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Research Article</a></li>
+            <li><a class="dropdown-item" href="#">Op Ed</a></li>
+            <li><a class="dropdown-item" href="#">Policy Brief</a></li>
+            <li><a class="dropdown-item" href="#">News Article</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="">Search</button>
+        </form>
+      </div>
+    </div>
+    
+
+  </nav>
+
+
+  <div id="container">
+
+
+  </div>
+</body>
+
 </html>
